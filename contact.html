@@ -18,9 +18,27 @@
           <th><a href="contact.html" id="link">Contact Me</a></th>
         </tr>
       </table>
-      <hr>
-      <p>I liek coffee. I liek programming... Noice!</p>
     </div>
+    <hr>
+    <h3>Please enter your info to contact me fer a jab</h3>
+    <h4>I'll do the jab</h4>
+
+    <form action="contact-data.php" method="post">
+      <input type="text" name="full-name" placeholder="Name">
+      <br>
+      <input type="text" name="job-type" placeholder="Job Subject">
+      <br>
+      <textarea name="job-desc" rows="8" cols="50" placeholder="Description"></textarea>
+      <br>
+      <input type="tel" name="phone" placeholder="Phone">
+      <br>
+      <p>Is it urgent?</p>
+      <input type="radio" name="urgent" value="yes">Yes
+      <input type="radio" name="urgent" value="No">No
+      <input type="hidden" name="id" value="">
+      <input type="submit" value="Submit">
+
+    </form>
 
   </body>
 
