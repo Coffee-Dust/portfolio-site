@@ -13,12 +13,28 @@
 
     <table>
       <tr>
-        <th><a href="index.html">Home</a></th>
-        <th><a href="about.html">About</a></th>
-        <th><a href="contact.html">Contact Me</a></th>
+        <th id="link"><a href="index.html">Home</a></th>
+        <th id="link"><a href="about.html">About</a></th>
+        <th id="link"><a href="contact.html">Contact Me</a></th>
       </tr>
     </table>
+
 
   </body>
 
 </html>
+
+<script type="text/javascript">
+  function changeText(event) {
+    var node = event.currentTarget
+    if (element.style.color === 'black') {
+      element.style.color = '#30f28c'
+    } else {
+      element.style.color = 'black'
+    }
+  }
+
+  var link = document.querySelector("#link")
+  link.addEventListener('mouseover', changeText)
+  link.addEventListener('mouseout', changeText)
+</script>
