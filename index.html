@@ -7,17 +7,18 @@
 
   </head>
 
-  <body>
+  <body onload="formatLinks()">
+    <div id="center" align="middle">
+      <a href="index.html"><img src="images/coffeeKingdomPRLogo512.png" alt="Coffee Dust Home" width="100" height="100"></a>
 
-    <a href="index.html"><img src="images/coffeeKingdomPRLogo512.png" alt="Coffee Dust Home" width="100" height="100"></a>
-
-    <table>
-      <tr>
-        <th><a href="index.html" id="link">Home</a></th>
-        <th><a href="about.html" id="link">About</a></th>
-        <th><a href="contact.html" id="link">Contact Me</a></th>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <th><a href="index.html" id="link">Home</a></th>
+          <th><a href="about.html" id="link">About</a></th>
+          <th><a href="contact.html" id="link">Contact Me</a></th>
+        </tr>
+      </table>
+    </div>
 
 
   </body>
@@ -25,17 +26,25 @@
 </html>
 
 <script type="text/javascript">
+  var link = document.querySelectorAll("#link")
+  function formatLinks() {
+    link.forEach((element) => {
+      element.style.color = 'black'
+      element.style.textDecoration = 'none'
+    })
+  }
   function changeText(event) {
     console.log("Changing text!");
     var node = event.currentTarget
-    if (node.style.color === 'black') {
-      node.style.color = '#30f28c'
-    } else {
+    if (node.style.color === 'brown') {
       node.style.color = 'black'
+    } else {
+      node.style.color = 'brown'
     }
   }
 
-  var link = document.querySelector("#link")
-  link.addEventListener('mouseover', changeText)
-  link.addEventListener('mouseout', changeText)
+  link.forEach((element, index, array) => {
+    element.addEventListener('mouseover', changeText)
+    element.addEventListener('mouseout', changeText)
+  })
 </script>
