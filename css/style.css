@@ -1,0 +1,28 @@
+nav a {
+  color: black;
+  text-decoration: none;
+  border: 2px dotted tan;
+  text-shadow: 3px 3px 10px #000;
+}
+
+iframe[src*="youtube"] {
+
+  border: 2px dotted rgb(116,87,62);
+
+}
+
+body {
+  background-color: rgba(116,87,62, 0.7);
+  background-image: url("../images/bg.jpg");
+  background-repeat: repeat
+  border: 5px double rgb(116,87,62);
+  font-family: "MorePerfectDOSVGA"
+}
+p {
+  font-family: "MorePerfectDOSVGA"
+}
+
+@font-face {
+  font-family: "MorePerfectDOSVGA"
+  src: url("../fonts/MorePerfectDOSVGA.webfont");
+}
