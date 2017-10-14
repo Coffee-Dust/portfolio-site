@@ -1,5 +1,5 @@
 nav a {
-  color: black;
+  color: tan;
   text-decoration: none;
   border: 2px dotted tan;
   text-shadow: 3px 3px 10px #000;
@@ -19,7 +19,8 @@ body {
   font-family: "MorePerfectDOSVGA"
 }
 p {
-  font-family: "MorePerfectDOSVGA"
+  font-family: "MorePerfectDOSVGA";
+  color: tan;
 }
 
 @font-face {
