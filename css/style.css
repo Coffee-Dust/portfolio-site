@@ -1,29 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+/*body, html {
+  height: 100%;
+  min-height: 100%;
+} */
+nav {
+  background-color: rgba(209,180,142, 0.8);
+  background-color: rgb(51,48,46);
+  border: 2px solid tan;
+  width: 99.6%;
+  z-index: 2;
+  padding-top: 5px;
+  margin: -8px;
+  box-shadow: 2px 2px 10px #000;
+  position: fixed;
+}
 nav a {
-  color: tan;
+  color: rgba(116, 87, 62, 0.95);
+  font-family: 'VT323', monospace;
+  font-size: 2em;
   text-decoration: none;
-  border: 2px dotted tan;
-  text-shadow: 3px 3px 10px #000;
+  text-shadow: 2px 2px 10px #000;
+  padding: 5px;
 }
 
-iframe[src*="youtube"] {
-
-  border: 2px dotted rgb(116,87,62);
-
+nav a:hover {
+  color: rgba(149,78,45,1);
+  color: tan;
 }
 
 body {
-  background-color: rgba(116,87,62, 0.7);
   background-image: url("../images/bg.jpg");
-  background-repeat: repeat
-  border: 5px double rgb(116,87,62);
-  font-family: "MorePerfectDOSVGA"
+  background-repeat: repeat;
+}
+h4 {
+
 }
 p {
-  font-family: "MorePerfectDOSVGA";
+  font-family: 'Source Code Pro';
   color: tan;
 }
+.size {
+  min-width: 400px;
+  max-width: 1068px;
+}
 
-@font-face {
-  font-family: "MorePerfectDOSVGA"
-  src: url("../fonts/MorePerfectDOSVGA.webfont");
+.content {
+  border-radius: 25px;
+  margin: auto;
+  background-color: rgba(116, 87, 62, 0.95);
+  width: 80%;
+  height: 100%;
+  padding: 25px;
+  box-shadow: 6px 6px 6px 10px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+#personal-info {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  height: 600px;
+  overflow: scroll;
+}
+
+#projects {
+  width: 25%;
+  padding: 10px 10px;
+  font-size: 0.7em;
+  color: tan;
+
+  float: right;
+  font-family: Georgia;
+}
+
+footer {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-sizing: border-box;
+  background-color: rgba(209,180,142, 0.8);
+  width: 100% + 25px;
+  height: 200px;
+  padding: 10px;
+  color: tan;
+  font-family: Georgia;
+  clear: both;
+  margin: -25px;
+  position: sticky;
+}
+
+.footer-boxes {
+  /*background-color: rgba(116, 87, 62, 0.9);*/
+  width: 25%;
+  height: 70px;
+  padding: 10px 10px;
+  font-size: 0.7em;
+  color: rgba(116, 87, 62, 0.9);
+  float: left;
+  font-family: 'Source Code Pro';
+}
+.footer-boxes > p {
+  color: rgba(116, 87, 62, 0.9);
+}
+
+#copyright {
+  font-size: 0.7em;
+  color: rgba(116, 87, 62, 0.9);
+  font-family: Georgia;
+  clear: both;
 }
