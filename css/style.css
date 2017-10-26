@@ -61,7 +61,7 @@ p {
   width: 80%;
   height: 100%;
   padding: 25px;
-  box-shadow: 6px 6px 6px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 4px 6px 5px rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
@@ -103,6 +103,7 @@ footer {
   clear: both;
   margin: -25px;
   padding-bottom: 0px;
+  position: relative;
 }
 
 .footer-boxes {
@@ -121,11 +122,13 @@ footer {
 
 #copyright {
   width: 300px;
-  display: inline-block;
-  vertical-align: bottom;
   font-size: 0.7em;
   color: rgba(116, 87, 62, 0.9);
   clear: both;
+  font-family: 'Source Code Pro';
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 * {
