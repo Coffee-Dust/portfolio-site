@@ -5,6 +5,13 @@
   height: 100%;
   min-height: 100%;
 } */
+body {
+  /*background-image: url("../images/bg.jpg");
+  background-repeat: repeat; */
+  font-family: 'Source Code Pro', monospace;
+  background-color: rgb(255, 238, 204);
+
+}
 nav {
   background-color: rgba(209,180,142, 0.8);
   background-color: rgb(51,48,46);
@@ -17,6 +24,7 @@ nav {
   box-shadow: 2px 2px 10px #000;
   position: fixed;
   padding-left: 5px;
+  min-width: 595px;
 }
 nav a {
   color: rgba(116, 87, 62, 0.95);
@@ -35,13 +43,11 @@ nav a:hover {
   color: tan;
 }
 
-body {
-  /*background-image: url("../images/bg.jpg");
-  background-repeat: repeat; */
-  font-family: 'Source Code Pro', monospace;
-  background-color: rgb(255, 238, 204)
-
+nav a:active {
+  color: rgba(149,78,45,1);
+  color: tan;
 }
+
 h4 {
 
 }
@@ -49,16 +55,12 @@ p {
   font-family: 'Source Code Pro';
   color: tan;
 }
-.size {
-  min-width: 595px;
-  max-width: 1068px;
-}
 
-.content {
+.wrapper {
   border-radius: 25px;
   margin: 0 auto;
   background-color: rgba(116, 87, 62, 0.95);
-  width: 80%;
+  width: 960px;
   height: 100%;
   padding: 25px;
   box-shadow: 1px 4px 6px 5px rgba(0, 0, 0, 0.7);
@@ -121,14 +123,15 @@ footer {
 }
 
 #copyright {
+  margin: 0 auto;
   width: 300px;
   font-size: 0.7em;
   color: rgba(116, 87, 62, 0.9);
   clear: both;
   font-family: 'Source Code Pro';
   padding: 10px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: -45%;
 }
 
 * {
