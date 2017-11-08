@@ -1,26 +1,109 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css?family=VT323');
-/*body, html {
+/*//////// MAIN ////////////*/
+body, html {
   height: 100%;
   min-height: 100%;
-} */
+  padding: 0;
+  margin: 0;
+}
 body {
-  /*background-image: url("../images/bg.jpg");
-  background-repeat: repeat; */
+  background: url(../images/bg.jpg) no-repeat center top;
+  background-size: cover;
+  position: fixed;
   font-family: 'Source Code Pro', monospace;
   background-color: rgb(255, 238, 204);
-
+  overflow: scroll;
 }
+
+h1 {
+  font-size: 1.2em;
+}
+p {
+  font-family: 'Source Code Pro';
+  color: rgb(116, 87, 62);
+}
+
+img, iframe, video {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0;
+  /* 960px */
+  width: 1000px;
+  height: 100%;
+  padding: 25px;
+  overflow: auto;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*////////// CONTENT-BOXES ////////////*/
+.box {
+  border-radius: 10px;
+  background-color: rgba(255,238,204,1);
+  padding: 10px;
+  box-shadow: 0px 2px 10px black;
+  margin: 20px auto;
+  float: left;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff7e8+1,d3ccc0+100 */
+background: rgb(255,247,232); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,247,232,1) 1%, rgba(211,204,192,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,247,232,1) 1%,rgba(211,204,192,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,247,232,1) 1%,rgba(211,204,192,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7e8', endColorstr='#d3ccc0',GradientType=0 ); /* IE6-9 */
+}
+
+.big {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.two-half {
+  width: 66%;
+}
+
+.one-half {
+  width: 33%;
+}
+
+/*////////// CONTENT-SETUP ////////////*/
+#projects a img {
+  width: 128px;
+  height: 128px;
+}
+
+#jobs {
+  float: right;
+}
+
+/*////////// NAV ////////////*/
 nav {
-  background-color: rgba(209,180,142, 0.8);
   background-color: rgb(51,48,46);
   box-sizing: border-box;
   border: 2px solid tan;
   width: 100%;
   z-index: 9999;
   padding-top: 5px;
-  margin: -8px;
+
   box-shadow: 2px 2px 10px #000;
   position: fixed;
   padding-left: 5px;
@@ -48,15 +131,16 @@ nav a:active {
   color: tan;
 }
 
-h4 {
-
-}
-p {
-  font-family: 'Source Code Pro';
+nav a.enabled {
   color: tan;
 }
 
-.wrapper {
+nav a img {
+  width: 35px;
+  height: 50px;
+}
+
+.eldwrapper {
   border-radius: 25px;
   margin: 0 auto;
   background-color: rgba(116, 87, 62, 0.95);
@@ -67,15 +151,6 @@ p {
   z-index: -1;
 }
 
-.clearfix:after {
-  content: '.';
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
-
 #personal-info {
   box-sizing: border-box;
   width: 50%;
@@ -83,40 +158,41 @@ p {
   overflow: scroll;
 }
 
-#projects {
-  width: 25%;
-  padding: 10px 10px;
-  font-size: 0.7em;
-  color: tan;
-  float: right;
-  visibility: hidden;
-}
+/*//////// FOOTER ////////////*/
 
 footer {
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  box-sizing: border-box;
-  background-color: rgba(209,180,142, 0.8);
-  width: 100% + 25px;
-  height: 200px;
-  padding: 10px;
-  color: tan;
-  font-family: Georgia;
+  /* ALT BG colors: tan, rgb(255, 238, 204)*/
+  border-radius: 0px 10px 10px 0px;
+  width: 105%;
+  height: 250px;
   clear: both;
-  margin: -25px;
-  padding-bottom: 0px;
+  padding: 10px;
   position: relative;
+  left: -25px;
+  bottom: -25px;
+  background: -moz-linear-gradient(top, rgba(255,238,204,1) 0%, rgba(172,147,119,1) 60%, rgba(116,87,62,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,238,204,1) 0%,rgba(172,147,119,1) 60%,rgba(116,87,62,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,238,204,1) 0%,rgba(172,147,119,1) 60%,rgba(116,87,62,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeecc', endColorstr='#cc74573e',GradientType=0 ); /* IE6-9 */
+  background-color: rgb(255, 238, 204);
+}
+
+#oldfooterbg {
+  background: -moz-linear-gradient(top, rgba(255,238,204,1) 0%, rgba(172,147,119,1) 60%, rgba(116,87,62,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,238,204,1) 0%,rgba(172,147,119,1) 60%,rgba(116,87,62,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,238,204,1) 0%,rgba(172,147,119,1) 60%,rgba(116,87,62,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeecc', endColorstr='#cc74573e',GradientType=0 ); /* IE6-9 */
+  background-color: rgb(255, 238, 204);
+
 }
 
 .footer-boxes {
-  /*background-color: rgba(116, 87, 62, 0.9);*/
   width: 25%;
-  height: 70px;
-  padding: 10px 10px;
+  padding: 15px;
   font-size: 0.7em;
   color: rgba(116, 87, 62, 0.9);
   float: left;
-  font-family: 'Source Code Pro';
+  position: relative;
 }
 .footer-boxes > p {
   color: rgba(116, 87, 62, 0.9);
@@ -124,20 +200,14 @@ footer {
 
 #copyright {
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
   font-size: 0.7em;
   color: rgba(116, 87, 62, 0.9);
+  color: tan;
   clear: both;
-  font-family: 'Source Code Pro';
   padding: 10px;
   position: relative;
-  bottom: -45%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  bottom: -30px;
 }
 
 @media only screen and (max-width: 980px) {

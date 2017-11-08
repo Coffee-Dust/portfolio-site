@@ -6,43 +6,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body onload="playStartupSound()">
+  <body onload="playStartupSound">
     <header>
       <nav>
-        <a href="index.html"><img src="images/coffeeKingdomPRLogo512.png" alt="Coffee Dust Home" width="35" height="50"></a>
-        <a href="index.html" class="link">Home</a>
-        <a href="about.html" class="link">About</a>
-        <a href="projects.html" class="link">Projects</a>
-        <a href="games.html" class="link">Games</a>
-        <a href="contact.html" class="link">Contact</a>
+        <div class="wrapper" style="padding: 0;">
+          <a href="index.html"><img src="images/coffeeKingdomPRLogo512.png" alt="Coffee Dust Home" width="35" height="50"></a>
+          <a href="index.html" class="enabled">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="projects.html" class="link">Projects</a>
+          <a href="games.html" class="link">Games</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
       </nav>
     </header>
     <div class="wrapper clearfix">
       <br>
       <br>
-      <!--
-      <audio autoplay>
-        <source src="audio/coffee_machine.mp3" type="audio/mp3">
-        <source src="audio/coffee_machine.ogg" type="audio/ogg">
-        <p>Sorry your browser doesn't support HTML5 Audio! Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a>.</p>
-      </audio> -->
-      <article id="personal-info">
-        <h2>Personal Info</h2>
-        <p>Hi! I'm Jonathan Dust, otherwise known as CoffeeDust. Personally I've always enjoyed programming. I started out with learning a little bit of lua. Didn't go too well for me at that time so I decided to take a break. Then I got into programming with iOS and Objective-C. That was not too fun for me then. I pretty much gave up on programming for a while, then my high school(Penn Foster Online) offered programming as my electives. That caught my attention so I decided to go with it. By the time I got to my electives I really enjoyed what I was learning even though they were just teaching me psuedocode. I learned a lot of things that I never could get the hang of then. </p>
-        <h4>The 8-bit Master</h4>
-        <p>At that point I heard Apple released a new easy to understand language called Swift. I came up with a game idea and put it into action. Several hundred forums later and about 6 months, my game was complete. Although it never really took off, it was good programming experience for me. That's when I decided to look for a coding school that would fit my needs.</p>
-        <h4>Flatiron School</h4>
-        <p>Somewhat disapointed my game did not take off,</p>
+      <br>
+      <article class="big box" id="main-about">
+        <figure>
+          <img src="images/main-about.jpg" alt="Picture of programming">
+        </figure>
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
-      <article id="projects">
-        <h4>Projects I've Done</h4>
+
+      <article class="two-half box" id="projects">
+        <h1>Projects I've Done</h1>
+        <a href="https://itunes.apple.com/us/app/the-8-bit-master/id1213057100?mt=8" target="_blank"><img src="images/app-icons/master.png" alt=""></a>
+      </article>
+
+      <article class="one-half box" id="jobs">
+        <h1>Jobs I'm currently working on:</h1>
         <ul>
-          <li>The 8-bit Master: On the <a href="https://itunes.apple.com/us/app/the-8-bit-master/id1213057100?mt=8">App Store</a></li>
           <li>CoffeeDust.io</li>
+          <li>The 8-bit Master</li>
+          <li>Flatiron School</li>
+          <li>CLI Ruby Gem 💎</li>
+          <li>Twitter Clone</li>
+          <li>Tic Tac Toe w/AI</li>
+          <li>PHP Store Inventory</li>
         </ul>
       </article>
 
-      <br>
       <footer>
         <div class="footer-boxes">
           <h4>Would like to hire me?</h4>
@@ -56,7 +62,8 @@
           © 2016 Jonathan Dust All Rights Reserved.
         </div>
       </footer>
-    </div>
+    </div> <!-- end.wrapper -->
+
   </body>
 
 </html>
@@ -73,16 +80,6 @@
       element.style.textDecoration = 'none'
     })
   }
-  /*
-  function changeText(event) {
-    console.log("Changing text!");
-    var node = event.currentTarget
-    if (node.style.color === 'brown') {
-      node.style.color = 'black'
-    } else {
-      node.style.color = 'brown'
-    }
-  } */
 
   link.forEach((element, index, array) => {
     element.addEventListener('mouseover', changeText)
