@@ -161,7 +161,7 @@ footer {
   padding: 10px;
   position: relative;
   left: -25px;
-  bottom: -25px;
+  bottom: -51px;
   
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff7e8+1,d3ccc0+100 */
 background: rgb(255,247,232); /* Old browsers */
@@ -206,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7e8', end
   clear: both;
   padding: 10px;
   position: relative;
-  bottom: -30px;
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 980px) {
